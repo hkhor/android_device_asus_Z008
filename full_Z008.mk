@@ -6,9 +6,7 @@ TARGET_SCREEN_WIDTH := 720
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/asus/Z008/device.mk)
-
-DEVICE_PACKAGE_OVERLAYS += device/asus/Z008/overlay
+$(call inherit-product, device/asus/Z008/device.mk
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
