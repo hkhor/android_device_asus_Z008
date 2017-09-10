@@ -20,6 +20,8 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320
 
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # call dalvik heap config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
@@ -29,9 +31,6 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 # Boot image Signature
 PRODUCT_COPY_FILES += \
     device/asus/Z008/keys/boot_z008.sig:install/bin/boot.sig
-
-DEVICE_PACKAGE_OVERLAYS := \
-    device/asus/Z008/overlay
 
 $(call inherit-product-if-exists, vendor/asus/Z008/Z008-vendor.mk)
 
