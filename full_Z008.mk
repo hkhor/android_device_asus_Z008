@@ -3,10 +3,12 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/Z008/device.mk)
+
+DEVICE_PACKAGE_OVERLAYS += device/asus/Z008/overlay
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
