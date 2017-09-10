@@ -2,12 +2,11 @@
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common LineageOS stuff.
+# Inherit some common AOSP stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/Z008/device.mk)
-$(call inherit-product-if-exists, vendor/asus/Z008/Z008-vendor.mk)
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
