@@ -27,7 +27,7 @@
     "remote":       "aosp",
     "repository":   "platform/hardware/intel/common/libstagefrighthw",
     "target_path":  "hardware/intel/common/libstagefrighthw",
-    "revision":     "cm-13.0"
+    "revision":     "nougat-mr2.3-release"
   },  
   {
     "remote":       "github",
