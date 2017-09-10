@@ -16,4 +16,4 @@
 
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_Z008.mk
+    $(LOCAL_DIR)/pa_Z008.mk
