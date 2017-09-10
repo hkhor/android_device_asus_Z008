@@ -17,4 +17,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/device.mk \
-    $(LOCAL_DIR)/pa_Z008.mk
