@@ -11,7 +11,7 @@ $(call inherit-product, device/asus/Z008/device.mk
 PRODUCT_RUNTIMES := runtime_libart_default
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := pa_Z008
+PRODUCT_NAME := full_Z008
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_Z008
 PRODUCT_MANUFACTURER := asus
