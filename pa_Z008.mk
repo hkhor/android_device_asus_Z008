@@ -2,20 +2,18 @@
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit some common PA stuff.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/Z008/device.mk)
-
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/asus/Z008/overlay
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_Z008
+PRODUCT_NAME := pa_Z008
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_Z008
 PRODUCT_MANUFACTURER := asus
