@@ -1,9 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "LineageOS/android_kernel_asus_moorefield",
+    "repository": "SlimRoms/kernel_asus_moorefield",
     "target_path": "kernel/asus/moorefield",
-    "revision": "cm-14.1"
+    "revision": "ng7.1"
   },
   {
     "remote": "github",
