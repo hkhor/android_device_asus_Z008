@@ -19,9 +19,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320
-    
-#Prebuilt kernel
-TARGET_PREBUILT_KERNEL:= device/asus/Z008/kernel
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
