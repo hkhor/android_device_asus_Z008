@@ -19,6 +19,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320
+    
+#Prebuilt kernel
+TARGET_PREBUILT_KERNEL:= device/asus/Z008/kernel
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -36,6 +39,3 @@ $(call inherit-product-if-exists, vendor/asus/Z008/Z008-vendor.mk)
 
 # Inherit from mofd-common
 $(call inherit-product, device/asus/mofd-common/mofd.mk)
-
-#Prebuilt kernel
-TARGET_PREBUILT_KERNEL:= device/asus/Z008/kernel
