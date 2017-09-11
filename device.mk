@@ -36,3 +36,6 @@ $(call inherit-product-if-exists, vendor/asus/Z008/Z008-vendor.mk)
 
 # Inherit from mofd-common
 $(call inherit-product, device/asus/mofd-common/mofd.mk)
+
+#Prebuilt kernel
+TARGET_PREBUILT_KERNEL:= device/asus/mofd-common/kernel
