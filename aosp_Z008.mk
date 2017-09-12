@@ -1,4 +1,4 @@
-# Boot animation
+# Boot animation Configuration
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit some common AOSP stuff.
@@ -6,6 +6,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/Z008/device.mk)
+
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
