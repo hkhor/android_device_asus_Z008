@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
     device/asus/Z008/keys/boot_z008.sig:install/bin/boot.sig
     
 #Prebuilt kernel
-TARGET_PREBUILT_KERNEL:= device/asus/Z008/kernel
+#TARGET_PREBUILT_KERNEL:= device/asus/Z008/kernel
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/Z008/overlay
