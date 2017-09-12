@@ -35,6 +35,10 @@ TARGET_PREBUILT_KERNEL:= device/asus/Z008/kernel
 
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/Z008/overlay
+    
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 $(call inherit-product-if-exists, vendor/asus/Z008/Z008-vendor.mk)
 
