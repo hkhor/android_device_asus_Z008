@@ -1,1 +1,3 @@
 add_lunch_combo aosp_Z008-userdebug
+add_lunch_combo aosp_Z008-eng
+add_lunch_combo aosp_Z008-user
